@@ -15,19 +15,24 @@ struct ContentView: View {
         TabView(selection: $selectedTag) {
             FuchuTabView()
                 .tabItem{
-                    Image(systemName: "die.face.1")
+                    Image(systemName: "t.circle.fill")
                     Text("Tokyo")
                 }.tag(1)
             NakayamaTabView()
                 .tabItem{
-                    Image(systemName: "die.face.2")
+                    Image(systemName: "n.circle.fill")
                     Text("Nakayama")
                 }.tag(2)
             HanshinTabView()
                 .tabItem{
-                    Image(systemName: "die.face.3")
+                    Image(systemName: "h.circle.fill")
                     Text("Hanshin")
                 }.tag(3)
+            FortuneView()
+                .tabItem{
+                    Image(systemName: "l.circle.fill")
+                    Text("Lucky")
+                }.tag(4)
         }
     }
 }

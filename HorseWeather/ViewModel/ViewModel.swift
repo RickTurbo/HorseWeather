@@ -16,6 +16,7 @@ private let iconMap = [
     "Snow": "❄️",
     "Clear": "☀️",
     "Clouds" : "☁️",
+    "Mist" : "🐴"
 ]
 
 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC416439289928B9009FAD24 /* FortuneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC416438289928B9009FAD24 /* FortuneView.swift */; };
+		EC41643B28997496009FAD24 /* FortuneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC41643A28997494009FAD24 /* FortuneViewModel.swift */; };
 		EC43A1B6288BC6CD0011B8BE /* Selima .otf in Resources */ = {isa = PBXBuildFile; fileRef = EC43A1B5288BC6CD0011B8BE /* Selima .otf */; };
 		EC43A1B8288BCC330011B8BE /* KouzanMouhituFontOTF.otf in Resources */ = {isa = PBXBuildFile; fileRef = EC43A1B7288BCC330011B8BE /* KouzanMouhituFontOTF.otf */; };
 		EC64ECB0287B248700311CB7 /* HorseWeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC64ECAF287B248700311CB7 /* HorseWeatherApp.swift */; };
@@ -24,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC416438289928B9009FAD24 /* FortuneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortuneView.swift; sourceTree = "<group>"; };
+		EC41643A28997494009FAD24 /* FortuneViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortuneViewModel.swift; sourceTree = "<group>"; };
 		EC43A1B4288BC3930011B8BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		EC43A1B5288BC6CD0011B8BE /* Selima .otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Selima .otf"; sourceTree = "<group>"; };
 		EC43A1B7288BCC330011B8BE /* KouzanMouhituFontOTF.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KouzanMouhituFontOTF.otf; sourceTree = "<group>"; };
@@ -100,6 +104,7 @@
 				EC64ECC1287B405B00311CB7 /* FuchuTabView.swift */,
 				EC64ECC3287B433300311CB7 /* NakayamaTabView.swift */,
 				EC64ECC5287B43D300311CB7 /* HanshinTabView.swift */,
+				EC416438289928B9009FAD24 /* FortuneView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -110,6 +115,7 @@
 				ECE188EC28806CFD00DFC5C2 /* ViewModel.swift */,
 				ECD8A96B28859CA60076B5E2 /* NakayamaViewModel.swift */,
 				ECD8A96D28859E400076B5E2 /* HanshinViewModel.swift */,
+				EC41643A28997494009FAD24 /* FortuneViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -205,7 +211,9 @@
 				ECD8A96C28859CA60076B5E2 /* NakayamaViewModel.swift in Sources */,
 				EC64ECC6287B43D300311CB7 /* HanshinTabView.swift in Sources */,
 				EC64ECC2287B405B00311CB7 /* FuchuTabView.swift in Sources */,
+				EC41643B28997496009FAD24 /* FortuneViewModel.swift in Sources */,
 				ECE188EB28806CE700DFC5C2 /* Model.swift in Sources */,
+				EC416439289928B9009FAD24 /* FortuneView.swift in Sources */,
 				EC64ECC4287B433300311CB7 /* NakayamaTabView.swift in Sources */,
 				EC64ECB0287B248700311CB7 /* HorseWeatherApp.swift in Sources */,
 				ECE188ED28806CFD00DFC5C2 /* ViewModel.swift in Sources */,
@@ -337,15 +345,18 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HorseWeather/Preview Content\"";
-				DEVELOPMENT_TEAM = ZP6TBAVA29;
+				DEVELOPMENT_TEAM = VN2PML7NUH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HorseWeather/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "お天気競馬場";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -355,7 +366,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -367,15 +378,18 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HorseWeather/Preview Content\"";
-				DEVELOPMENT_TEAM = ZP6TBAVA29;
+				DEVELOPMENT_TEAM = VN2PML7NUH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HorseWeather/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "お天気競馬場";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -385,7 +399,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
