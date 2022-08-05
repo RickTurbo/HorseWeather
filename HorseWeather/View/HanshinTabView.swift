@@ -14,7 +14,7 @@ struct HanshinTabView: View {
     var body: some View {
         ZStack {
             GeometryReader {proxy in
-                Image("weather5")
+                Image("weather11")
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .frame(width: proxy.size.width, height: proxy.size.height)
