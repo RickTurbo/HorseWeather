@@ -40,7 +40,7 @@ struct FuchuTabView: View {
                     LazyVStack {
                         Text("東京競馬場")
                             .font(.custom("KouzanBrushFontOTF",size: 60))
-                            .padding(.top, 60)
+                            .padding(.top, 50)
 
                         //                WebImage(url: viewModel.weatherIconURL)
                         //                    .resizable()
@@ -54,10 +54,11 @@ struct FuchuTabView: View {
 
                         Text(viewModel.weatherIcon)
                             .font(.system(size:90))
+                            .padding(.bottom, 10)
 
                         Text(viewModel.descriptionText)
                             .font(.custom("KouzanBrushFontOTF",size: 60))
-                            .padding(.top, 5)
+
 
 
                         Text(viewModel.temp)

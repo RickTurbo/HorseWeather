@@ -29,8 +29,8 @@ struct FortuneView: View {
                 ScrollView {
                     LazyVStack {
                         Text("Lucky Number")
-                            .font(.custom("Times-Roman", size: 50))
-                            .padding(.top, 60)
+                            .font(.custom("Times-Roman", size: 55))
+                            .padding(.top, 50)
                             .padding(.bottom, 2)
                         Text("\(randomInt + 1)")
                             .font(.custom("Selima", size: 120))
