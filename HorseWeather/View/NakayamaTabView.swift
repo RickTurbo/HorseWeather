@@ -14,7 +14,7 @@ struct NakayamaTabView: View {
     var body: some View {
         ZStack {
             GeometryReader {proxy in
-                Image("horse3")
+                Image("weather4")
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .frame(width: proxy.size.width, height: proxy.size.height)
@@ -27,7 +27,7 @@ struct NakayamaTabView: View {
                     LazyVStack {
                         Text("中山競馬場")
                             .font(.custom("KouzanBrushFontOTF",size: 60))
-                            .padding(.top)
+                            .padding(.top, 60)
 
                         //                WebImage(url: viewModel.weatherIconURL)
                         //                    .resizable()

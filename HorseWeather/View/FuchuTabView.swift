@@ -27,7 +27,7 @@ struct FuchuTabView: View {
     var body: some View {
         ZStack {
             GeometryReader {proxy in
-                Image("horse4")
+                Image("weather3")
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .frame(width: proxy.size.width, height: proxy.size.height)
@@ -40,7 +40,7 @@ struct FuchuTabView: View {
                     LazyVStack {
                         Text("東京競馬場")
                             .font(.custom("KouzanBrushFontOTF",size: 60))
-                            .padding(.top)
+                            .padding(.top, 60)
 
                         //                WebImage(url: viewModel.weatherIconURL)
                         //                    .resizable()

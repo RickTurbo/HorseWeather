@@ -14,7 +14,7 @@ struct HanshinTabView: View {
     var body: some View {
         ZStack {
             GeometryReader {proxy in
-                Image("horse1")
+                Image("weather5")
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .frame(width: proxy.size.width, height: proxy.size.height)
@@ -27,7 +27,7 @@ struct HanshinTabView: View {
                     LazyVStack {
                         Text("阪神競馬場")
                             .font(.custom("KouzanBrushFontOTF",size: 60))
-                            .padding(.top)
+                            .padding(.top, 60)
 
         //                WebImage(url: viewModel.weatherIconURL)
         //                    .resizable()

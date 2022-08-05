@@ -7,37 +7,7 @@
 
 import Foundation
 import SwiftUI
-//
-//var horses = [String]()
 
-//horses.append(contentsOf: [])
+var horses =  ["メイケイエール","コントレイル","ジャックドール","タイトルホルダー","ソダシ","オルフェーブル","エフフォーリア","パンサラッサ","ステラヴェローチェ","オニャンコポン","ファインルージュ","メイケイエール","ドウドゥース","ジオグリフ","メロディーレーン","アカイイト","レッドジェネシス","オーソリティ"]
 
-//struct PhotoData: Identifiable {
-//    var id = UUID()
-//    var imageName:String
-//    var title:String
-//}
-//
-//var photoArray = [
-//    PhotoData(imageName: "number1", title: "メイケイエール"),
-//    PhotoData(imageName: "number2", title: "コントレイル"),
-//    PhotoData(imageName: "number3", title: "ジャックドール"),
-//    PhotoData(imageName: "number4", title: "タイトルホルダー"),
-//    PhotoData(imageName: "number5", title: "ソダシ"),
-//    PhotoData(imageName: "number6", title: "オルフェーブル"),
-//    PhotoData(imageName: "number7", title: "エフフォーリア"),
-//    PhotoData(imageName: "number8", title: "パンサラッサ"),
-//    PhotoData(imageName: "number9", title: "ステラヴェローチェ"),
-//    PhotoData(imageName: "number10", title: "オニャンコポン"),
-//    PhotoData(imageName: "number11", title: "ファインルージュ"),
-//    PhotoData(imageName: "number12", title: "メイケイエール"),
-//    PhotoData(imageName: "number13", title: "ドウドゥース"),
-//    PhotoData(imageName: "number14", title: "ジオグリフ"),
-//    PhotoData(imageName: "number15", title: "メロディーレーン"),
-//    PhotoData(imageName: "number16", title: "アカイイト"),
-//    PhotoData(imageName: "number17", title: "レッドジェネシス"),
-//    PhotoData(imageName: "number18", title: "オーソリティ"),
-//]
-
-
-
+var horsesImage = [ "number1","number2","number3","number4","number5","number6","number7","number8","number9","number10","number11","number12","number13","number14","number15","number16","number17","number18",]
