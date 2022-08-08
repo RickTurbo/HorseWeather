@@ -73,13 +73,6 @@ struct FortuneView: View {
             }
         }
     }
-
-    func sharePost(shareText: String, shareImage: UIImage, shareUrl: String) {
-        let activityItems = [shareText, shareImage, URL(string: shareUrl)!] as [Any]
-        let activityVC = UIActivityViewController(activityItems: activityItems, applicationActivities: nil)
-        let viewController = UIApplication.shared.windows.first?.rootViewController
-        viewController?.present(activityVC, animated: true)
-    }
 }
 
 
