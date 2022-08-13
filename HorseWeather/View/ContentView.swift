@@ -28,11 +28,16 @@ struct ContentView: View {
                     Image(systemName: "h.circle.fill")
                     Text("Hanshin")
                 }.tag(3)
+            TodoView()
+                .tabItem{
+                    Image(systemName: "m.circle.fill")
+                    Text("Memo")
+                }.tag(4)
             FortuneView()
                 .tabItem{
                     Image(systemName: "l.circle.fill")
                     Text("Lucky")
-                }.tag(4)
+                }.tag(5)
         }
     }
 }

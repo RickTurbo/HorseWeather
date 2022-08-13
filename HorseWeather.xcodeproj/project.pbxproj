@@ -18,6 +18,15 @@
 		EC64ECC2287B405B00311CB7 /* FuchuTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC64ECC1287B405B00311CB7 /* FuchuTabView.swift */; };
 		EC64ECC4287B433300311CB7 /* NakayamaTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC64ECC3287B433300311CB7 /* NakayamaTabView.swift */; };
 		EC64ECC6287B43D300311CB7 /* HanshinTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC64ECC5287B43D300311CB7 /* HanshinTabView.swift */; };
+		ECB5B3C128A4CC5000DD0604 /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB5B3C028A4CC5000DD0604 /* TodoView.swift */; };
+		ECB5B3C428A4E82B00DD0604 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = ECB5B3C328A4E82B00DD0604 /* Realm */; };
+		ECB5B3C628A4E82B00DD0604 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = ECB5B3C528A4E82B00DD0604 /* RealmSwift */; };
+		ECB5B3CA28A4EADD00DD0604 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB5B3C928A4EADD00DD0604 /* RealmManager.swift */; };
+		ECB5B3CC28A4EF7700DD0604 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB5B3CB28A4EF7700DD0604 /* Task.swift */; };
+		ECCB11E828A1021E0098D390 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCB11E728A1021E0098D390 /* TaskView.swift */; };
+		ECCB11ED28A103A20098D390 /* TaskRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCB11EC28A103A20098D390 /* TaskRow.swift */; };
+		ECCB11EF28A1056B0098D390 /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCB11EE28A1056B0098D390 /* AddTaskView.swift */; };
+		ECCB11F128A1097F0098D390 /* SmallAddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCB11F028A1097E0098D390 /* SmallAddButton.swift */; };
 		ECD8A96C28859CA60076B5E2 /* NakayamaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD8A96B28859CA60076B5E2 /* NakayamaViewModel.swift */; };
 		ECD8A96E28859E410076B5E2 /* HanshinViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD8A96D28859E400076B5E2 /* HanshinViewModel.swift */; };
 		ECE188EB28806CE700DFC5C2 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE188EA28806CE700DFC5C2 /* Model.swift */; };
@@ -39,6 +48,13 @@
 		EC64ECC1287B405B00311CB7 /* FuchuTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuchuTabView.swift; sourceTree = "<group>"; };
 		EC64ECC3287B433300311CB7 /* NakayamaTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NakayamaTabView.swift; sourceTree = "<group>"; };
 		EC64ECC5287B43D300311CB7 /* HanshinTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanshinTabView.swift; sourceTree = "<group>"; };
+		ECB5B3C028A4CC5000DD0604 /* TodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoView.swift; sourceTree = "<group>"; };
+		ECB5B3C928A4EADD00DD0604 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		ECB5B3CB28A4EF7700DD0604 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		ECCB11E728A1021E0098D390 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
+		ECCB11EC28A103A20098D390 /* TaskRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRow.swift; sourceTree = "<group>"; };
+		ECCB11EE28A1056B0098D390 /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
+		ECCB11F028A1097E0098D390 /* SmallAddButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallAddButton.swift; sourceTree = "<group>"; };
 		ECD8A96B28859CA60076B5E2 /* NakayamaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NakayamaViewModel.swift; sourceTree = "<group>"; };
 		ECD8A96D28859E400076B5E2 /* HanshinViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanshinViewModel.swift; sourceTree = "<group>"; };
 		ECE188EA28806CE700DFC5C2 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
@@ -50,6 +66,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECB5B3C628A4E82B00DD0604 /* RealmSwift in Frameworks */,
+				ECB5B3C428A4E82B00DD0604 /* Realm in Frameworks */,
 				ECE188F028816FE300DFC5C2 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -78,12 +96,15 @@
 			children = (
 				EC43A1B4288BC3930011B8BE /* Info.plist */,
 				EC64ECAF287B248700311CB7 /* HorseWeatherApp.swift */,
+				ECCB11E928A1036A0098D390 /* Todo */,
 				EC66DD2228855ADF0027845A /* ViewModel */,
 				EC66DD2128855AC50027845A /* View */,
 				ECD8A96A288597EC0076B5E2 /* Model */,
 				EC64ECB3287B248F00311CB7 /* Assets.xcassets */,
 				EC43A1B5288BC6CD0011B8BE /* Selima .otf */,
 				EC43A1B7288BCC330011B8BE /* KouzanMouhituFontOTF.otf */,
+				ECB5B3C928A4EADD00DD0604 /* RealmManager.swift */,
+				ECB5B3CB28A4EF7700DD0604 /* Task.swift */,
 				EC64ECB5287B248F00311CB7 /* Preview Content */,
 			);
 			path = HorseWeather;
@@ -105,6 +126,7 @@
 				EC64ECC3287B433300311CB7 /* NakayamaTabView.swift */,
 				EC64ECC5287B43D300311CB7 /* HanshinTabView.swift */,
 				EC416438289928B9009FAD24 /* FortuneView.swift */,
+				ECB5B3C028A4CC5000DD0604 /* TodoView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -118,6 +140,33 @@
 				EC41643A28997494009FAD24 /* FortuneViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		ECCB11E928A1036A0098D390 /* Todo */ = {
+			isa = PBXGroup;
+			children = (
+				ECCB11EB28A103860098D390 /* Components */,
+				ECCB11EA28A103740098D390 /* View */,
+			);
+			path = Todo;
+			sourceTree = "<group>";
+		};
+		ECCB11EA28A103740098D390 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ECCB11E728A1021E0098D390 /* TaskView.swift */,
+				ECCB11EE28A1056B0098D390 /* AddTaskView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ECCB11EB28A103860098D390 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				ECCB11EC28A103A20098D390 /* TaskRow.swift */,
+				ECCB11F028A1097E0098D390 /* SmallAddButton.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		ECD8A96A288597EC0076B5E2 /* Model */ = {
@@ -146,6 +195,8 @@
 			name = HorseWeather;
 			packageProductDependencies = (
 				ECE188EF28816FE300DFC5C2 /* SDWebImageSwiftUI */,
+				ECB5B3C328A4E82B00DD0604 /* Realm */,
+				ECB5B3C528A4E82B00DD0604 /* RealmSwift */,
 			);
 			productName = HorseWeather;
 			productReference = EC64ECAC287B248700311CB7 /* HorseWeather.app */;
@@ -177,6 +228,7 @@
 			mainGroup = EC64ECA3287B248700311CB7;
 			packageReferences = (
 				ECE188EE28816FE200DFC5C2 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				ECB5B3C228A4E82A00DD0604 /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = EC64ECAD287B248700311CB7 /* Products */;
 			projectDirPath = "";
@@ -207,15 +259,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC64ECB2287B248700311CB7 /* ContentView.swift in Sources */,
+				ECCB11EF28A1056B0098D390 /* AddTaskView.swift in Sources */,
 				ECD8A96E28859E410076B5E2 /* HanshinViewModel.swift in Sources */,
+				ECCB11F128A1097F0098D390 /* SmallAddButton.swift in Sources */,
 				ECD8A96C28859CA60076B5E2 /* NakayamaViewModel.swift in Sources */,
+				ECCB11E828A1021E0098D390 /* TaskView.swift in Sources */,
+				ECB5B3CA28A4EADD00DD0604 /* RealmManager.swift in Sources */,
 				EC64ECC6287B43D300311CB7 /* HanshinTabView.swift in Sources */,
+				ECCB11ED28A103A20098D390 /* TaskRow.swift in Sources */,
 				EC64ECC2287B405B00311CB7 /* FuchuTabView.swift in Sources */,
 				EC41643B28997496009FAD24 /* FortuneViewModel.swift in Sources */,
+				ECB5B3C128A4CC5000DD0604 /* TodoView.swift in Sources */,
 				ECE188EB28806CE700DFC5C2 /* Model.swift in Sources */,
 				EC416439289928B9009FAD24 /* FortuneView.swift in Sources */,
 				EC64ECC4287B433300311CB7 /* NakayamaTabView.swift in Sources */,
 				EC64ECB0287B248700311CB7 /* HorseWeatherApp.swift in Sources */,
+				ECB5B3CC28A4EF7700DD0604 /* Task.swift in Sources */,
 				ECE188ED28806CFD00DFC5C2 /* ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,6 +486,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		ECB5B3C228A4E82A00DD0604 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.10.0;
+			};
+		};
 		ECE188EE28816FE200DFC5C2 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
@@ -438,6 +505,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		ECB5B3C328A4E82B00DD0604 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECB5B3C228A4E82A00DD0604 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		ECB5B3C528A4E82B00DD0604 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECB5B3C228A4E82A00DD0604 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
 		ECE188EF28816FE300DFC5C2 /* SDWebImageSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = ECE188EE28816FE200DFC5C2 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
