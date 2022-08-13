@@ -93,7 +93,6 @@ struct FuchuTabView: View {
                         .padding(.bottom, 50)
                     }
                 }
-
             }
         }
     }
