@@ -47,7 +47,7 @@ struct FortuneView: View {
                         Button(action: {
                             randomInt = Int.random(in: 0..<18)
                         }) {
-                            Text("Fotune")
+                            Text("Fortune")
                                 .frame(width: 150, height: 50)
                                 .foregroundColor(.white)
                                 .background(
