@@ -9,6 +9,7 @@ import SwiftUI
 
 struct FortuneView: View {
     @State var randomInt = Int.random(in: 0..<18)
+
     let gradientView = LinearGradient(
         gradient: Gradient(colors: [Color.blue, Color.yellow]),
         startPoint: .leading,
@@ -57,7 +58,7 @@ struct FortuneView: View {
                         }
 
                         Button(action: {
-                            sharePost(shareText: "お天気競馬場 ラッキーナンバーの\(randomInt + 1)番で馬券当たった！", shareImage: UIImage(named: horsesImage[randomInt])!, shareUrl: "aaaa")
+                            sharePost(shareText: "お天気競馬場 ラッキーナンバーの\(randomInt + 1)番で馬券当たった！", shareImage: UIImage(named: horsesImage[randomInt])!, shareUrl: "https://apps.apple.com/us/app/%E3%81%8A%E5%A4%A9%E6%B0%97%E7%AB%B6%E9%A6%AC%E5%A0%B4/id1637432269?itsct=apps_box_link&itscg=30200")
                             //アプリのリンクを貼る
                         }) {
                             Text("Share")
