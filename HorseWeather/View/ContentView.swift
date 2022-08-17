@@ -5,11 +5,12 @@
 //  Created by 児島　陸斗 on 2022/07/11.
 //
 
-import SDWebImageSwiftUI
+
 import SwiftUI
 
 struct ContentView: View {
     @State var selectedTag = 1
+    
 
     var body: some View {
         TabView(selection: $selectedTag) {
