@@ -10,9 +10,9 @@ import SwiftUI
 
 
 
-var horses =  ["デアリングタクト","コントレイル","ジャックドール","タイトルホルダー","ソダシ","オルフェーブル","エフフォーリア","パンサラッサ","ステラヴェローチェ","オニャンコポン","ファインルージュ","メイケイエール","ドウドゥース","ジオグリフ","メロディーレーン","アカイイト","レッドジェネシス","オーソリティ"]
+var horses =  ["デアリングタクト","コントレイル","ジャックドール","タイトルホルダー","ソダシ","オルフェーブル","エフフォーリア","パンサラッサ","ステラヴェローチェ","オニャンコポン","ファインルージュ","メイケイエール","ドウドゥース","ジオグリフ","メロディーレーン","アカイイト","レッドジェネシス","オーソリティ", "?"]
 
-var horsesImage = [ "DaringTact","Contrail","Jackdol","Titleholder","Sodashi","Orfevre","Efforia","Panthalassa","StellaVeloce","Onyankopon","FineRouge","MeikeiYell","DoDeuce","Geoglyph","MelodyLane","Akaiito","RedGenesis","Authority",]
+var horsesImage = [ "DaringTact","Contrail","Jackdol","Titleholder","Sodashi","Orfevre","Efforia","Panthalassa","StellaVeloce","Onyankopon","FineRouge","MeikeiYell","DoDeuce","Geoglyph","MelodyLane","Akaiito","RedGenesis","Authority","random"]
 
 func sharePost(shareText: String, shareImage: UIImage, shareUrl: String) {
     let activityItems = [shareText, shareImage, URL(string: shareUrl)!] as [Any]

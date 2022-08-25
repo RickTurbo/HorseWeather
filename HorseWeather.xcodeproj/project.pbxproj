@@ -18,6 +18,7 @@
 		EC64ECC2287B405B00311CB7 /* FuchuTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC64ECC1287B405B00311CB7 /* FuchuTabView.swift */; };
 		EC64ECC4287B433300311CB7 /* NakayamaTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC64ECC3287B433300311CB7 /* NakayamaTabView.swift */; };
 		EC64ECC6287B43D300311CB7 /* HanshinTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC64ECC5287B43D300311CB7 /* HanshinTabView.swift */; };
+		EC6A91E628B7706A008A21B1 /* BannerAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6A91E528B7706A008A21B1 /* BannerAd.swift */; };
 		ECB5B3C128A4CC5000DD0604 /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB5B3C028A4CC5000DD0604 /* TodoView.swift */; };
 		ECB5B3C428A4E82B00DD0604 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = ECB5B3C328A4E82B00DD0604 /* Realm */; };
 		ECB5B3C628A4E82B00DD0604 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = ECB5B3C528A4E82B00DD0604 /* RealmSwift */; };
@@ -48,6 +49,7 @@
 		EC64ECC1287B405B00311CB7 /* FuchuTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuchuTabView.swift; sourceTree = "<group>"; };
 		EC64ECC3287B433300311CB7 /* NakayamaTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NakayamaTabView.swift; sourceTree = "<group>"; };
 		EC64ECC5287B43D300311CB7 /* HanshinTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanshinTabView.swift; sourceTree = "<group>"; };
+		EC6A91E528B7706A008A21B1 /* BannerAd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerAd.swift; sourceTree = "<group>"; };
 		ECB5B3C028A4CC5000DD0604 /* TodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoView.swift; sourceTree = "<group>"; };
 		ECB5B3C928A4EADD00DD0604 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 		ECB5B3CB28A4EF7700DD0604 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				EC43A1B5288BC6CD0011B8BE /* Selima .otf */,
 				EC43A1B7288BCC330011B8BE /* KouzanMouhituFontOTF.otf */,
 				ECB5B3C928A4EADD00DD0604 /* RealmManager.swift */,
+				EC6A91E528B7706A008A21B1 /* BannerAd.swift */,
 				ECB5B3CB28A4EF7700DD0604 /* Task.swift */,
 				EC64ECB5287B248F00311CB7 /* Preview Content */,
 			);
@@ -269,6 +272,7 @@
 				ECCB11ED28A103A20098D390 /* TaskRow.swift in Sources */,
 				EC64ECC2287B405B00311CB7 /* FuchuTabView.swift in Sources */,
 				EC41643B28997496009FAD24 /* FortuneViewModel.swift in Sources */,
+				EC6A91E628B7706A008A21B1 /* BannerAd.swift in Sources */,
 				ECB5B3C128A4CC5000DD0604 /* TodoView.swift in Sources */,
 				ECE188EB28806CE700DFC5C2 /* Model.swift in Sources */,
 				EC416439289928B9009FAD24 /* FortuneView.swift in Sources */,
@@ -421,7 +425,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.33;
+				MARKETING_VERSION = 1.40;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kojikoji7765.HorseWeather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -456,7 +460,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.33;
+				MARKETING_VERSION = 1.40;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kojikoji7765.HorseWeather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
