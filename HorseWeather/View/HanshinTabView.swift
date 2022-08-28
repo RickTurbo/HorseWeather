@@ -72,10 +72,9 @@ struct HanshinTabView: View {
                             }
                             .padding()
                         }
-                        .padding(.bottom, 50)
                     }
+                    .padding(.bottom, 50)
                 }
-
             }
         }
     }

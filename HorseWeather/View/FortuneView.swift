@@ -12,6 +12,7 @@ struct FortuneView: View {
     @State var randomInt = 18
     @State private var opacity = 0
 
+
     let gradientView = LinearGradient(
         gradient: Gradient(colors: [Color.blue, Color.yellow]),
         startPoint: .leading,

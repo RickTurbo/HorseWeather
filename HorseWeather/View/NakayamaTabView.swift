@@ -28,11 +28,9 @@ struct NakayamaTabView: View {
                         Text("中山競馬場")
                             .font(.custom("KouzanBrushFontOTF",size: 60))
                             .padding(.top, 50)
-
                         //                WebImage(url: viewModel.weatherIconURL)
                         //                    .resizable()
                         //                    .frame(width: 150, height: 130)
-
                         Text(viewModel.title)
                             .font(.custom("KouzanBrushFontOTF", size: 60))
                             .padding(.top, 15)
@@ -70,8 +68,8 @@ struct NakayamaTabView: View {
                                     .padding()
                                 }
                             }
+                            .padding()
                         }
-                        .padding()
                     }
                     .padding(.bottom, 50)
                 }

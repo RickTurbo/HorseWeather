@@ -8,21 +8,8 @@
 import SDWebImageSwiftUI
 import SwiftUI
 
-
 struct FuchuTabView: View {
     @StateObject var viewModel = WeatherViewModel()
-
-
-    //    var iconModel: String {
-    //        get {
-    //            return viewModel.icon2[0]
-    //        }
-    //    }
-    //
-    //    var weatherIconURL2: URL {
-    //        let urlString = "https://openweathermap.org/img/wn/\(iconModel)@2x.png"
-    //        return URL(string: urlString)!
-    //    }
 
     var body: some View {
         ZStack {
@@ -41,13 +28,9 @@ struct FuchuTabView: View {
                         Text("東京競馬場")
                             .font(.custom("KouzanBrushFontOTF",size: 60))
                             .padding(.top, 50)
-
                         //                WebImage(url: viewModel.weatherIconURL)
                         //                    .resizable()
                         //                    .frame(width: 150, height: 130)
-
-
-
                         Text(viewModel.title)
                             .font(.custom("KouzanBrushFontOTF", size: 60))
                             .padding(.top, 15)
@@ -58,8 +41,6 @@ struct FuchuTabView: View {
 
                         Text(viewModel.descriptionText)
                             .font(.custom("KouzanBrushFontOTF",size: 60))
-
-
 
                         Text(viewModel.temp)
                             .font(.custom("Selima", size: 80))
@@ -77,7 +58,6 @@ struct FuchuTabView: View {
                                         Text("\(time)時間後")
                                             .font(.custom("KouzanBrushFontOTF",size: 20))
 
-
                                         Text(viewModel.weatherIcon2[index])
                                             .font(.system(size:50))
                                         //                                Text(viewModel.pop[index])
@@ -90,8 +70,8 @@ struct FuchuTabView: View {
                             }
                             .padding()
                         }
-                        .padding(.bottom, 50)
                     }
+                    .padding(.bottom, 50)
                 }
             }
         }
