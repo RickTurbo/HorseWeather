@@ -10,6 +10,7 @@ import SwiftUI
 struct TodoView: View {
     @StateObject var realmManager = RealmManager()
     @State private var showAddTaskView = false
+    let AdMobID: String = "ca-app-pub-7803037430770004/1473442469"
 
     var body: some View {
         ZStack(alignment: .bottomTrailing) {

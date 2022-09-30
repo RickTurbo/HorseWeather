@@ -42,7 +42,7 @@ class NakayamaViewModel: ObservableObject {
     }
 
     func fetchWeather() {
-        guard let url = URL(string: "https://api.openweathermap.org/data/2.5/onecall?lat=35.5325868&lon=139.5689054&units=metric&lang=ja&appid=563f1813695628294ea2117b80ed8826") else {
+        guard let url = URL(string: "https://api.openweathermap.org/data/2.5/onecall?lat=35.7252922&lon=139.9608896&units=metric&lang=ja&appid=563f1813695628294ea2117b80ed8826") else {
             return
         }
 

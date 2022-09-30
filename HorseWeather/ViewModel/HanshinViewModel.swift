@@ -43,7 +43,7 @@ class HanshinViewModel: ObservableObject {
     }
 
     func fetchWeather() {
-        guard let url = URL(string: "https://api.openweathermap.org/data/2.5/onecall?lat=34.7802582&lon=135.353071&units=metric&lang=ja&appid=563f1813695628294ea2117b80ed8826") else {
+        guard let url = URL(string: "https://api.openweathermap.org/data/2.5/onecall?lat=34.7806088&lon=135.3580085&units=metric&lang=ja&appid=563f1813695628294ea2117b80ed8826") else {
             return
         }
 

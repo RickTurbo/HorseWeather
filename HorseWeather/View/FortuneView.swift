@@ -11,7 +11,7 @@ struct FortuneView: View {
 //    @State var randomInt = Int.random(in: 0..<18)
     @State var randomInt = 18
     @State private var opacity = 0
-
+    let AdMobID: String = "ca-app-pub-7803037430770004/4594429821"
 
     let gradientView = LinearGradient(
         gradient: Gradient(colors: [Color.blue, Color.yellow]),
@@ -72,9 +72,11 @@ struct FortuneView: View {
                                 .background(
                                     gradientView)
                                 .cornerRadius(40)
-                                .padding(.bottom, 100)
+                                .padding(.bottom, 50)
                         }
                     }
+                    BannerAd(unitID: AdMobID)
+                        .frame(width: UIScreen.main.bounds.width, height: 50)
                 }
             }
         }

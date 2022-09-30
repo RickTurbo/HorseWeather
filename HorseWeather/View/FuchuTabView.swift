@@ -10,6 +10,7 @@ import SwiftUI
 
 struct FuchuTabView: View {
     @StateObject var viewModel = WeatherViewModel()
+    let AdMobID: String = "ca-app-pub-7803037430770004/1473442469"
 
     var body: some View {
         ZStack {
@@ -64,12 +65,14 @@ struct FuchuTabView: View {
                                         //                                    .foregroundColor(.blue)
                                         //                                Text(viewModel.temp2[index])
                                     }
-                                    .frame(maxWidth: 90, maxHeight: 100)
+                                    .frame(maxWidth: 90, maxHeight: 300)
                                     .padding()
                                 }
                             }
                             .padding()
                         }
+                        BannerAd(unitID: AdMobID)
+                            .frame(width: UIScreen.main.bounds.width, height: 50)
                     }
                     .padding(.bottom, 50)
                 }

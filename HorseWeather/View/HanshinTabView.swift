@@ -10,6 +10,7 @@ import SwiftUI
 
 struct HanshinTabView: View {
     @StateObject var viewModel = HanshinViewModel()
+    let AdMobID: String = "ca-app-pub-7803037430770004/1007921493"
     
     var body: some View {
         ZStack {
@@ -72,6 +73,8 @@ struct HanshinTabView: View {
                             }
                             .padding()
                         }
+                        BannerAd(unitID: AdMobID)
+                            .frame(width: UIScreen.main.bounds.width, height: 50)
                     }
                     .padding(.bottom, 50)
                 }

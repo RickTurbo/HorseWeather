@@ -10,6 +10,7 @@ import SwiftUI
 
 struct NakayamaTabView: View {
     @StateObject var viewModel = NakayamaViewModel()
+    let AdMobID: String = "ca-app-pub-7803037430770004/1199493184"
     
     var body: some View {
         ZStack {
@@ -70,6 +71,8 @@ struct NakayamaTabView: View {
                             }
                             .padding()
                         }
+                        BannerAd(unitID: AdMobID)
+                            .frame(width: UIScreen.main.bounds.width, height: 50)
                     }
                     .padding(.bottom, 50)
                 }
