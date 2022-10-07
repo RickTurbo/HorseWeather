@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State var selectedTag = 1    
-    let AdMobID: String = "ca-app-pub-7803037430770004/6883172502"
+    let AdMobID: String = "ca-app-pub-3940256099942544/2934735716"
     
     var body: some View {
         VStack {

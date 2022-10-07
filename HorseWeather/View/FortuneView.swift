@@ -11,7 +11,7 @@ struct FortuneView: View {
 //    @State var randomInt = Int.random(in: 0..<18)
     @State var randomInt = 18
     @State private var opacity = 0
-    let AdMobID: String = "ca-app-pub-7803037430770004/4594429821"
+    let AdMobID: String = "ca-app-pub-3940256099942544/2934735716"
 
     let gradientView = LinearGradient(
         gradient: Gradient(colors: [Color.blue, Color.yellow]),
@@ -30,14 +30,34 @@ struct FortuneView: View {
             .overlay(.ultraThinMaterial)
 
             VStack {
+                Image("DaringTact2")
+                    .resizable()
+                    .frame(width: 120, height: 80)
+                    .cornerRadius(20)
+                    .offset(x: -110, y: -10)
+
+                Image("RedGenesis2")
+                    .resizable()
+                    .frame(width: 140, height: 100)
+                    .cornerRadius(20)
+                    .offset(x: 130, y: -80)
+
+                Image("Contrail2")
+                    .resizable()
+                    .frame(width: 140, height: 100)
+                    .cornerRadius(20)
+                    .offset(x: -100, y: 180)
+            }
+
+            VStack {
                 ScrollView {
                     LazyVStack {
                         Text("Lucky Number")
-                            .font(.custom("Times-Roman", size: 55))
+                            .font(.custom("Times-Roman", size: 50))
                             .padding(.top, 50)
                             .padding(.bottom, 2)
                         Text("\(randomInt + 1)")
-                            .font(.custom("Selima", size: 120))
+                            .font(.custom("Selima", size: 100))
                             .opacity(Double(opacity))  
 
                         Image(horsesImage[randomInt])

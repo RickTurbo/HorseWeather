@@ -10,7 +10,7 @@ import SwiftUI
 
 struct NakayamaTabView: View {
     @StateObject var viewModel = NakayamaViewModel()
-    let AdMobID: String = "ca-app-pub-7803037430770004/1199493184"
+    let AdMobID: String = "ca-app-pub-3940256099942544/2934735716"
     
     var body: some View {
         ZStack {
@@ -22,18 +22,32 @@ struct NakayamaTabView: View {
             }
             .ignoresSafeArea()
             .overlay(.ultraThinMaterial)
+
+            VStack {
+                Image("MeikeiYell2")
+                    .resizable()
+                    .frame(width: 120, height: 80)
+                    .cornerRadius(20)
+                    .offset(x: 140, y: -20)
+
+                Image("Contrail2")
+                    .resizable()
+                    .frame(width: 140, height: 100)
+                    .cornerRadius(20)
+                    .offset(x: -130, y: 80)
+            }
             
             VStack {
                 ScrollView {
                     LazyVStack {
                         Text("中山競馬場")
-                            .font(.custom("KouzanBrushFontOTF",size: 60))
+                            .font(.custom("KouzanBrushFontOTF",size: 50))
                             .padding(.top, 50)
                         //                WebImage(url: viewModel.weatherIconURL)
                         //                    .resizable()
                         //                    .frame(width: 150, height: 130)
                         Text(viewModel.title)
-                            .font(.custom("KouzanBrushFontOTF", size: 60))
+                            .font(.custom("KouzanBrushFontOTF", size: 50))
                             .padding(.top, 15)
 
                         Text(viewModel.weatherIcon)
@@ -41,14 +55,14 @@ struct NakayamaTabView: View {
                             .padding(.bottom, 10)
 
                         Text(viewModel.descriptionText)
-                            .font(.custom("KouzanBrushFontOTF",size: 60))
+                            .font(.custom("KouzanBrushFontOTF",size: 50))
 
                         Text(viewModel.temp)
-                            .font(.custom("Selima", size: 80))
+                            .font(.custom("Selima", size: 60))
                             .padding(.top, 5)
 
                         Text("１時間ごとの天気")
-                            .font(.custom("KouzanBrushFontOTF",size: 40))
+                            .font(.custom("KouzanBrushFontOTF",size: 30))
                             .padding(.top, 50)
 
                         ScrollView(.horizontal) {

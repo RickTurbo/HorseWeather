@@ -6,8 +6,10 @@
 	<array>
 		<string>ja</string>
 	</array>
+	<key>CFBundleURLTypes</key>
+	<array/>
 	<key>GADApplicationIdentifier</key>
-	<string>ca-app-pub-7803037430770004~8821024414</string>
+	<string>ca-app-pub-3940256099942544~1458002511</string>
 	<key>SKAdNetworkItems</key>
 	<array>
 		<dict>
