@@ -10,7 +10,9 @@ import SwiftUI
 
 struct HanshinTabView: View {
     @StateObject var viewModel = HanshinViewModel()
-    let AdMobID: String = "ca-app-pub-3940256099942544/2934735716"
+    @StateObject var weekModel = WeekViewModel()
+
+    let AdMobID: String = "ca-app-pub-7803037430770004/1007921493"
     
     var body: some View {
         ZStack {
@@ -41,30 +43,26 @@ struct HanshinTabView: View {
                 ScrollView {
                     LazyVStack {
                         Text("阪神競馬場")
-                            .font(.custom("KouzanBrushFontOTF",size: 50))
+                            .font(.custom("KouzanBrushFontOTF",size: 45))
                             .padding(.top, 50)
 
-        //                WebImage(url: viewModel.weatherIconURL)
-        //                    .resizable()
-        //                    .frame(width: 150, height: 130)
-
                         Text(viewModel.title)
-                            .font(.custom("KouzanBrushFontOTF", size: 50))
+                            .font(.custom("KouzanBrushFontOTF", size: 45))
                             .padding(.top, 15)
 
                         Text(viewModel.weatherIcon)
-                            .font(.system(size:90))
+                            .font(.system(size:80))
                             .padding(.bottom, 10)
 
                         Text(viewModel.descriptionText)
-                            .font(.custom("KouzanBrushFontOTF",size: 50))
+                            .font(.custom("KouzanBrushFontOTF",size: 40))
 
                         Text(viewModel.temp)
                             .font(.custom("Selima", size: 60))
                             .padding(.top, 5)
 
                         Text("１時間ごとの天気")
-                            .font(.custom("KouzanBrushFontOTF",size: 30))
+                            .font(.custom("KouzanBrushFontOTF",size: 25))
                             .padding(.top, 50)
 
                         ScrollView(.horizontal) {
@@ -77,9 +75,6 @@ struct HanshinTabView: View {
 
                                         Text(viewModel.weatherIcon2[index])
                                             .font(.system(size:50))
-        //                                Text(viewModel.pop[index])
-        //                                    .foregroundColor(.blue)
-        //                                Text(viewModel.temp2[index])
                                     }
                                     .frame(maxWidth: 90, maxHeight: 100)
                                     .padding()
@@ -87,6 +82,41 @@ struct HanshinTabView: View {
                             }
                             .padding()
                         }
+
+                        Text("１週間ごとの天気")
+                            .font(.custom("KouzanBrushFontOTF",size: 25))
+                            .padding(.top, 20)
+
+                        ScrollView(.horizontal) {
+                            LazyHStack {
+                                VStack {
+                                    Text("今日")
+                                        .font(.custom("KouzanBrushFontOTF",size: 25))
+                                    Text(viewModel.todayIcon)
+                                        .font(.system(size:37))
+                                }
+                                .offset(x:0, y:22)
+
+                                HStack {
+                                    ForEach(weekModel.weekNext, id: \.self) { week in
+                                        Text(week).frame(width: 40)
+                                            .font(.custom("KouzanBrushFontOTF",size: 25))
+                                    }
+                                }
+
+                            }
+                            HStack {
+                                ForEach(viewModel.dailyIcon.indices, id: \.self) { index in
+                                    VStack{
+                                        Text(viewModel.dailyIcon[index])
+                                            .font(.system(size:37))
+                                    }
+                                }
+                            }
+                            .offset(x:30, y:-40)
+                        }
+                        .offset(x:30, y:0)
+
                         BannerAd(unitID: AdMobID)
                             .frame(width: UIScreen.main.bounds.width, height: 50)
                     }

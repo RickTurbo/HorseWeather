@@ -7,10 +7,13 @@
 
 import Foundation
 
+//model.daily[0].weather.first?.main
+
 struct WeatherModel: Codable {
     let timezone: String
     let current: CurrentWeather
     let hourly: [HourWeather]
+    let daily: [DailyWeather]
 }
 
 struct CurrentWeather: Codable {
@@ -36,3 +39,10 @@ struct HourInfo: Codable{
     let icon: String
 }
 
+struct DailyWeather: Codable {
+    let weather: [DailyInfo]
+}
+
+struct DailyInfo: Codable {
+    let main: String?
+}

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5A23B88B606A01E3012FDF46 /* Pods_HorseWeather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E5C942B2458C1FD45CF598D /* Pods_HorseWeather.framework */; };
+		EC153E0228F02DC6004C9D27 /* WeekViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC153E0128F02DC4004C9D27 /* WeekViewModel.swift */; };
 		EC416439289928B9009FAD24 /* FortuneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC416438289928B9009FAD24 /* FortuneView.swift */; };
 		EC41643B28997496009FAD24 /* FortuneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC41643A28997494009FAD24 /* FortuneViewModel.swift */; };
 		EC43A1B6288BC6CD0011B8BE /* Selima .otf in Resources */ = {isa = PBXBuildFile; fileRef = EC43A1B5288BC6CD0011B8BE /* Selima .otf */; };
@@ -40,6 +41,7 @@
 		5E5C942B2458C1FD45CF598D /* Pods_HorseWeather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HorseWeather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B7C4A6ECF9439FA5EAC001D /* Pods-HorseWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HorseWeather.debug.xcconfig"; path = "Target Support Files/Pods-HorseWeather/Pods-HorseWeather.debug.xcconfig"; sourceTree = "<group>"; };
 		97D8290046FC740CD419A33B /* Pods-HorseWeather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HorseWeather.release.xcconfig"; path = "Target Support Files/Pods-HorseWeather/Pods-HorseWeather.release.xcconfig"; sourceTree = "<group>"; };
+		EC153E0128F02DC4004C9D27 /* WeekViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekViewModel.swift; sourceTree = "<group>"; };
 		EC416438289928B9009FAD24 /* FortuneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortuneView.swift; sourceTree = "<group>"; };
 		EC41643A28997494009FAD24 /* FortuneViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortuneViewModel.swift; sourceTree = "<group>"; };
 		EC43A1B4288BC3930011B8BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 				ECD8A96B28859CA60076B5E2 /* NakayamaViewModel.swift */,
 				ECD8A96D28859E400076B5E2 /* HanshinViewModel.swift */,
 				EC41643A28997494009FAD24 /* FortuneViewModel.swift */,
+				EC153E0128F02DC4004C9D27 /* WeekViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 				EC64ECC4287B433300311CB7 /* NakayamaTabView.swift in Sources */,
 				EC64ECB0287B248700311CB7 /* HorseWeatherApp.swift in Sources */,
 				ECB5B3CC28A4EF7700DD0604 /* Task.swift in Sources */,
+				EC153E0228F02DC6004C9D27 /* WeekViewModel.swift in Sources */,
 				ECE188ED28806CFD00DFC5C2 /* ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -494,7 +498,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.44;
+				MARKETING_VERSION = 1.50;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kojikoji7765.HorseWeather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -530,7 +534,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.44;
+				MARKETING_VERSION = 1.50;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kojikoji7765.HorseWeather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

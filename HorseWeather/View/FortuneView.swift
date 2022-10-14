@@ -11,7 +11,7 @@ struct FortuneView: View {
 //    @State var randomInt = Int.random(in: 0..<18)
     @State var randomInt = 18
     @State private var opacity = 0
-    let AdMobID: String = "ca-app-pub-3940256099942544/2934735716"
+    let AdMobID: String = "ca-app-pub-7803037430770004/4594429821"
 
     let gradientView = LinearGradient(
         gradient: Gradient(colors: [Color.blue, Color.yellow]),
@@ -53,7 +53,7 @@ struct FortuneView: View {
                 ScrollView {
                     LazyVStack {
                         Text("Lucky Number")
-                            .font(.custom("Times-Roman", size: 50))
+                            .font(.custom("Times-Roman", size: 45))
                             .padding(.top, 50)
                             .padding(.bottom, 2)
                         Text("\(randomInt + 1)")

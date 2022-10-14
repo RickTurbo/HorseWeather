@@ -54,8 +54,8 @@ struct TaskView: View {
             Text("Horse Memo")
                 .padding()
                 .frame(maxWidth: .infinity)
-                .font(.custom("Times-Roman", size: 55))
-                .padding(.top, 50)
+                .font(.custom("Times-Roman", size: 40))
+                .padding(.top, 40)
 
             List {
                 ForEach(realmManager.tasks, id: \.id) {

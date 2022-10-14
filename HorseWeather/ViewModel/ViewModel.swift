@@ -32,10 +32,13 @@ class WeatherViewModel: ObservableObject {
     @Published var weatherIcon2 = [String]()
     @Published var pop = [String]()
     @Published var temp2 = [String]()
+    @Published var dailyIcon = [String]()
+    @Published var todayIcon: String = "_"
 
     init() {
         fetchWeather()
     }
+    
 
     var weatherIconURL: URL {
         let urlString = "https://openweathermap.org/img/wn/\(icon)@2x.png"
@@ -67,12 +70,18 @@ class WeatherViewModel: ObservableObject {
                     self.date = "\(model.current.dt)"
 
                     self.weatherIcon = iconMap[model.current.weather.first?.main ?? defaultIcon] ?? defaultIcon
+                    
                     self.weatherIcon2.append(contentsOf: [iconMap[model.hourly[0].weather.first?.main ?? defaultIcon]! ,iconMap[model.hourly[1].weather.first?.main ?? defaultIcon]!,iconMap[model.hourly[2].weather.first?.main ?? defaultIcon]!])
                     self.weatherIcon2.append(contentsOf: [iconMap[model.hourly[3].weather.first?.main ?? defaultIcon]!,iconMap[model.hourly[4].weather.first?.main ?? defaultIcon]!])
 
                     self.pop.append(contentsOf: ["\(model.hourly[0].pop)%","\(model.hourly[1].pop)%","\(model.hourly[2].pop)%","\(model.hourly[3].pop)%","\(model.hourly[4].pop)%",])
 
                     self.temp2.append(contentsOf: ["\(model.hourly[0].temp)°","\(model.hourly[1].temp)°","\(model.hourly[2].temp)°","\(model.hourly[3].temp)°","\(model.hourly[4].temp)°",])
+
+                    //明日から６日分の天気
+                    self.dailyIcon.append(contentsOf: [iconMap[model.daily[1].weather.first?.main ?? defaultIcon]!, iconMap[model.daily[2].weather.first?.main ?? defaultIcon]!,iconMap[model.daily[3].weather.first?.main ?? defaultIcon]!, iconMap[model.daily[4].weather.first?.main ?? defaultIcon]!, iconMap[model.daily[5].weather.first?.main ?? defaultIcon]!, iconMap[model.daily[6].weather.first?.main ?? defaultIcon]!])
+
+                    self.todayIcon = iconMap[model.daily[0].weather.first?.main ?? defaultIcon]!
                 }
             }
             catch {
