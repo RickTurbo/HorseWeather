@@ -28,13 +28,13 @@ struct FuchuTabView: View {
             VStack {
                 Image("Jackdol2")
                     .resizable()
-                    .frame(width: 120, height: 80)
+                    .frame(width: 100, height: 70)
                     .cornerRadius(20)
                     .offset(x: -130, y: 60)
 
                 Image("Onyankopon2")
                     .resizable()
-                    .frame(width: 140, height: 100)
+                    .frame(width: 120, height: 90)
                     .cornerRadius(20)
                     .offset(x: 130, y: 80)
             }

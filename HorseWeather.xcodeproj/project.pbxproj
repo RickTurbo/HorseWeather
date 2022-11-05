@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5A23B88B606A01E3012FDF46 /* Pods_HorseWeather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E5C942B2458C1FD45CF598D /* Pods_HorseWeather.framework */; };
+		AFCD7F629F577A03AC1C6888 /* Pods_HorseWeather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A638DCAEC643C4137D51BB /* Pods_HorseWeather.framework */; };
 		EC153E0228F02DC6004C9D27 /* WeekViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC153E0128F02DC4004C9D27 /* WeekViewModel.swift */; };
 		EC416439289928B9009FAD24 /* FortuneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC416438289928B9009FAD24 /* FortuneView.swift */; };
 		EC41643B28997496009FAD24 /* FortuneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC41643A28997494009FAD24 /* FortuneViewModel.swift */; };
@@ -38,9 +38,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5E5C942B2458C1FD45CF598D /* Pods_HorseWeather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HorseWeather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6B7C4A6ECF9439FA5EAC001D /* Pods-HorseWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HorseWeather.debug.xcconfig"; path = "Target Support Files/Pods-HorseWeather/Pods-HorseWeather.debug.xcconfig"; sourceTree = "<group>"; };
-		97D8290046FC740CD419A33B /* Pods-HorseWeather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HorseWeather.release.xcconfig"; path = "Target Support Files/Pods-HorseWeather/Pods-HorseWeather.release.xcconfig"; sourceTree = "<group>"; };
+		001175AAB823BC0FA01AB413 /* Pods-HorseWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HorseWeather.debug.xcconfig"; path = "Target Support Files/Pods-HorseWeather/Pods-HorseWeather.debug.xcconfig"; sourceTree = "<group>"; };
+		E8496F82ECC7264252F7E9D8 /* Pods-HorseWeather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HorseWeather.release.xcconfig"; path = "Target Support Files/Pods-HorseWeather/Pods-HorseWeather.release.xcconfig"; sourceTree = "<group>"; };
 		EC153E0128F02DC4004C9D27 /* WeekViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekViewModel.swift; sourceTree = "<group>"; };
 		EC416438289928B9009FAD24 /* FortuneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortuneView.swift; sourceTree = "<group>"; };
 		EC41643A28997494009FAD24 /* FortuneViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortuneViewModel.swift; sourceTree = "<group>"; };
@@ -67,6 +66,7 @@
 		ECD8A96D28859E400076B5E2 /* HanshinViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanshinViewModel.swift; sourceTree = "<group>"; };
 		ECE188EA28806CE700DFC5C2 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		ECE188EC28806CFD00DFC5C2 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		F5A638DCAEC643C4137D51BB /* Pods_HorseWeather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HorseWeather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,28 +77,28 @@
 				ECB5B3C628A4E82B00DD0604 /* RealmSwift in Frameworks */,
 				ECB5B3C428A4E82B00DD0604 /* Realm in Frameworks */,
 				ECE188F028816FE300DFC5C2 /* SDWebImageSwiftUI in Frameworks */,
-				5A23B88B606A01E3012FDF46 /* Pods_HorseWeather.framework in Frameworks */,
+				AFCD7F629F577A03AC1C6888 /* Pods_HorseWeather.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A0BFEE3CD4161D9EA2FFE73 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5A638DCAEC643C4137D51BB /* Pods_HorseWeather.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B10295B01E3D3072C55C4190 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6B7C4A6ECF9439FA5EAC001D /* Pods-HorseWeather.debug.xcconfig */,
-				97D8290046FC740CD419A33B /* Pods-HorseWeather.release.xcconfig */,
+				001175AAB823BC0FA01AB413 /* Pods-HorseWeather.debug.xcconfig */,
+				E8496F82ECC7264252F7E9D8 /* Pods-HorseWeather.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		E462DD12BDC1AF6713ADD1A0 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				5E5C942B2458C1FD45CF598D /* Pods_HorseWeather.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		EC64ECA3287B248700311CB7 = {
@@ -107,7 +107,7 @@
 				EC64ECAE287B248700311CB7 /* HorseWeather */,
 				EC64ECAD287B248700311CB7 /* Products */,
 				B10295B01E3D3072C55C4190 /* Pods */,
-				E462DD12BDC1AF6713ADD1A0 /* Frameworks */,
+				1A0BFEE3CD4161D9EA2FFE73 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -214,11 +214,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC64ECBA287B248F00311CB7 /* Build configuration list for PBXNativeTarget "HorseWeather" */;
 			buildPhases = (
-				4C7E18E0038D63264AE28BF0 /* [CP] Check Pods Manifest.lock */,
+				120EDB9967288C6AB7E460D4 /* [CP] Check Pods Manifest.lock */,
 				EC64ECA8287B248700311CB7 /* Sources */,
 				EC64ECA9287B248700311CB7 /* Frameworks */,
 				EC64ECAA287B248700311CB7 /* Resources */,
-				5CC25DAC95305155AA23773C /* [CP] Embed Pods Frameworks */,
+				04D7E2BF95239150D3AFA6E8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -255,6 +255,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				ja,
 				Base,
 			);
 			mainGroup = EC64ECA3287B248700311CB7;
@@ -286,7 +287,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4C7E18E0038D63264AE28BF0 /* [CP] Check Pods Manifest.lock */ = {
+		04D7E2BF95239150D3AFA6E8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HorseWeather/Pods-HorseWeather-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HorseWeather/Pods-HorseWeather-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HorseWeather/Pods-HorseWeather-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		120EDB9967288C6AB7E460D4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -306,23 +324,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5CC25DAC95305155AA23773C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HorseWeather/Pods-HorseWeather-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HorseWeather/Pods-HorseWeather-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HorseWeather/Pods-HorseWeather-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -474,7 +475,7 @@
 		};
 		EC64ECBB287B248F00311CB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6B7C4A6ECF9439FA5EAC001D /* Pods-HorseWeather.debug.xcconfig */;
+			baseConfigurationReference = 001175AAB823BC0FA01AB413 /* Pods-HorseWeather.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -486,6 +487,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HorseWeather/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "お天気競馬場";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "許可するとあなたの好みの広告が表示されやすくなります。";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -498,7 +500,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.50;
+				MARKETING_VERSION = 1.52;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kojikoji7765.HorseWeather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -510,7 +512,7 @@
 		};
 		EC64ECBC287B248F00311CB7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 97D8290046FC740CD419A33B /* Pods-HorseWeather.release.xcconfig */;
+			baseConfigurationReference = E8496F82ECC7264252F7E9D8 /* Pods-HorseWeather.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -522,6 +524,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HorseWeather/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "お天気競馬場";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "許可するとあなたの好みの広告が表示されやすくなります。";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -534,7 +537,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.50;
+				MARKETING_VERSION = 1.52;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kojikoji7765.HorseWeather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

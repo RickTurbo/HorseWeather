@@ -7,9 +7,10 @@
 
 
 import SwiftUI
+import AppTrackingTransparency
 
 struct ContentView: View {
-    @State var selectedTag = 1    
+    @State var selectedTag = 1
     let AdMobID: String = "ca-app-pub-7803037430770004/6883172502"
     
     var body: some View {
@@ -44,8 +45,13 @@ struct ContentView: View {
             BannerAd(unitID: AdMobID)
                 .frame(width: UIScreen.main.bounds.width, height: 50)
         }
+        .onReceive(NotificationCenter.default.publisher(for: UIApplication.didBecomeActiveNotification)) { _ in
+            ATTrackingManager.requestTrackingAuthorization(completionHandler: { status in })
+        }
     }
 }
+
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

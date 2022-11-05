@@ -30,23 +30,23 @@ struct FortuneView: View {
             .overlay(.ultraThinMaterial)
 
             VStack {
-                Image("DaringTact2")
-                    .resizable()
-                    .frame(width: 120, height: 80)
-                    .cornerRadius(20)
-                    .offset(x: -110, y: -10)
+//                Image("DaringTact2")
+//                    .resizable()
+//                    .frame(width: 100, height: 70)
+//                    .cornerRadius(20)
+//                    .offset(x: -150, y: -150)
+//
+//                Image("RedGenesis2")
+//                    .resizable()
+//                    .frame(width: 120, height: 90)
+//                    .cornerRadius(20)
+//                    .offset(x: 150, y: -190)
 
-                Image("RedGenesis2")
-                    .resizable()
-                    .frame(width: 140, height: 100)
-                    .cornerRadius(20)
-                    .offset(x: 130, y: -80)
-
-                Image("Contrail2")
-                    .resizable()
-                    .frame(width: 140, height: 100)
-                    .cornerRadius(20)
-                    .offset(x: -100, y: 180)
+//                Image("Contrail2")
+//                    .resizable()
+//                    .frame(width: 140, height: 80)
+//                    .cornerRadius(20)
+//                    .offset(x: -100, y: 280)
             }
 
             VStack {

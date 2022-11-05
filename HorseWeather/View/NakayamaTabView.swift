@@ -28,13 +28,13 @@ struct NakayamaTabView: View {
             VStack {
                 Image("MeikeiYell2")
                     .resizable()
-                    .frame(width: 120, height: 80)
+                    .frame(width: 100, height: 70)
                     .cornerRadius(20)
                     .offset(x: 140, y: -20)
 
                 Image("Contrail2")
                     .resizable()
-                    .frame(width: 140, height: 100)
+                    .frame(width: 120, height: 80)
                     .cornerRadius(20)
                     .offset(x: -130, y: 80)
             }
