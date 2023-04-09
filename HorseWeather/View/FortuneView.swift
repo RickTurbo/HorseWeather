@@ -84,7 +84,7 @@ struct FortuneView: View {
                         }
 
                         Button(action: {
-                            sharePost(shareText: "お天気競馬場 ラッキーナンバーは\(randomInt + 1)番！", shareImage: UIImage(named: horsesImage[randomInt])!, shareUrl: "https://apps.apple.com/us/app/%E3%81%8A%E5%A4%A9%E6%B0%97%E7%AB%B6%E9%A6%AC%E5%A0%B4/id1637432269?itsct=apps_box_link&itscg=30200")
+                            sharePost(shareText: "ラッキーナンバーは\(randomInt + 1)番！ iOSアプリ【お天気競馬場】:", shareImage: UIImage(named: horsesImage[randomInt])!, shareUrl: "https://is.gd/3y1ijZ")
                         }) {
                             Text("Share")
                                 .frame(width: 150, height: 50)
